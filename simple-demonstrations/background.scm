@@ -37,7 +37,7 @@
          RUN-NONINTERACTIVE
          tq84_img
          tq84_lyr
-        "f:\\img\\blue-rect.jpg"     ; File name
+        "f:\\img\\background.jpg"    ; File name
         ""                           ; File name as entered by user, apparently useless in scripts
     )
 
