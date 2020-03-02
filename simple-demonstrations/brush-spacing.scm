@@ -61,7 +61,7 @@
    (gimp-context-set-brush-spacing    1.0 )
    (gimp-paintbrush my_layer 0 4 lin-5 PAINT-CONSTANT 0)
 
-   (gimp-file-save RUN-NONINTERACTIVE my_image my_layer "f:\\img\\brush-spacings.jpg" "")
+   (gimp-file-save RUN-NONINTERACTIVE my_image my_layer "f:\\img\\brush-spacing.jpg" "")
    (gimp-brush-delete tq84-brush)
    (gimp-image-delete my_image)
 )
