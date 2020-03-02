@@ -17,20 +17,20 @@
          LAYER-MODE-NORMAL-LEGACY    ; Layer combination mode
     ))))
 
+    (gimp-context-set-background     ; Set background color
+       '(000 000 255)                ; blue
+    )
+
+    (gimp-drawable-fill              ; The purpose of gimp-drawable-fill is to fill a newly created
+         tq84_lyr                    ; drawable before adding it to the image (Compare with gimp-edit-fill)
+         FILL-BACKGROUND             ; Use current background color
+    )
+
     (gimp-image-insert-layer
        tq84_img
        tq84_lyr
        0                             ; parent   (0 -> layer is added inside the main stack, outside of any group.)
        0                             ; position (location of the layer inside the stack, 0: top)
-    )
-
-    (gimp-context-set-background     ; Set background color
-       '(000 000 255)                ; blue
-    )
-
-    (gimp-drawable-fill
-         tq84_lyr
-         FILL-BACKGROUND             ; Use current background color
     )
 
     (gimp-file-save                  ; Invoke correct save handler according to file extension
