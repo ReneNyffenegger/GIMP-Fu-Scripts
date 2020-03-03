@@ -13,7 +13,7 @@
          100                         ; height
          RGB-IMAGE                   ; Layer type (RGB-IMAGE, RGBA-IMAGE, GRAY-IMAGE, GRAYA-IMAGE, INDEXED-IMAGE or INDEXEDA-IMAGE)
         "tq84"                       ; Name of the layer
-         0                           ; Opacity
+         100                         ; Opacity (0 … 100, 0 = transparent, 100 = opaque)
          LAYER-MODE-NORMAL-LEGACY    ; Layer combination mode
     ))))
 
