@@ -36,7 +36,7 @@
     (gimp-file-save                  ; Invoke correct save handler according to file extension
          RUN-NONINTERACTIVE
          tq84_img
-         tq84_lyr
+         tq84_lyr                    ; I don't understand why gimp-file-save requires a drawable - I just want to save an image.
         "f:\\img\\background.jpg"    ; File name
         ""                           ; File name as entered by user, apparently useless in scripts
     )
