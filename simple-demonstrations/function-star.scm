@@ -20,9 +20,9 @@
 )
 
 (let* (
-         (img   (car (gimp-image-new 250 250 RGB)))
-         (lyr   (car (gimp-layer-new img 250 250 RGB-IMAGE "my layer" 0 LAYER-MODE-NORMAL-LEGACY)))
-         (tq84-brush (car (gimp-brush-new "TQ84 Brush")))
+         (img (car (gimp-image-new     250 250 RGB)))
+         (lyr (car (gimp-layer-new img 250 250 RGB-IMAGE "my layer" 100 LAYER-MODE-NORMAL-LEGACY)))
+         (brs (car (gimp-brush-new                       "TQ84 Brush"                           )))
          (nof-points  10)
          (jump-points  3)
          (i nof-points)
@@ -33,9 +33,9 @@
      (gimp-context-set-background '( 30  50 200))
      (gimp-context-set-foreground '(240 110  30))
 
-     (gimp-context-set-brush         tq84-brush)
-     (gimp-brush-set-shape           tq84-brush BRUSH-GENERATED-CIRCLE)
-     (gimp-brush-set-hardness        tq84-brush 0.3)
+     (gimp-context-set-brush         brs)
+     (gimp-brush-set-shape           brs BRUSH-GENERATED-CIRCLE)
+     (gimp-brush-set-hardness        brs 0.3)
 
      (gimp-drawable-fill lyr FILL-BACKGROUND)
 
@@ -61,7 +61,7 @@
 
      (gimp-file-save RUN-NONINTERACTIVE img lyr "F:\\img\\function-star.jpg" "")
 
-     (gimp-brush-delete tq84-brush)
+     (gimp-brush-delete brs)
      (gimp-image-delete img)
 
 )

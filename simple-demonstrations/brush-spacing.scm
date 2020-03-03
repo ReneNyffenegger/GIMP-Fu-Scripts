@@ -1,7 +1,7 @@
 (let* (
-     (img (car (gimp-image-new     250 100 RGB                                            )))
-     (lyr (car (gimp-layer-new img 250 100 RGB-IMAGE "my layer" 0 LAYER-MODE-NORMAL-LEGACY)))
-     (brs (car (gimp-brush-new                       "TQ84 Brush"                         )))
+     (img (car (gimp-image-new     250 100 RGB                                              )))
+     (lyr (car (gimp-layer-new img 250 100 RGB-IMAGE "my layer" 100 LAYER-MODE-NORMAL-LEGACY)))
+     (brs (car (gimp-brush-new                       "TQ84 Brush"                           )))
 
      (lin-1 (make-vector 4))
      (lin-2 (make-vector 4))
