@@ -1,6 +1,6 @@
 (let* (
-     (img (car (gimp-image-new     250 250 RGB                                            )))
-     (lyr (car (gimp-layer-new img 250 250 RGB-IMAGE "my layer" 0 LAYER-MODE-NORMAL-LEGACY)))
+     (img (car (gimp-image-new     250 250 RGB                                              )))
+     (lyr (car (gimp-layer-new img 250 250 RGB-IMAGE "my layer" 100 LAYER-MODE-NORMAL-LEGACY)))
      (brs (car (gimp-brush-new "TQ84 Brush")))
 
      (coords (make-vector 4)) ; Array of 4 elements (to be set to doubles)
