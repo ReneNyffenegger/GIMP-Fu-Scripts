@@ -19,6 +19,14 @@
           200 200            ; width and height of the ellipse
    )
 ;  (gimp-edit-stroke lyr)
+   ;
+   ; 2020-03-08
+   ;    The following gimp-context-set-brush is apparently needed on Linux or
+   ;    older/newer(?) versions for this example to run on David's
+   ;    GIMP installation.
+   :
+   (gimp-context-set-brush (car (gimp-brush-new "non-existent brush")))
+
    (gimp-drawable-edit-stroke-selection lyr)
 
    (gimp-file-save RUN-NONINTERACTIVE img lyr "f:\\img\\circle.jpg" ""      )
